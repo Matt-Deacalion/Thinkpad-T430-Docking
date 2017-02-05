@@ -1,0 +1,3 @@
+# udev rules for my Thinkpad T430 (kipling)
+
+SUBSYSTEM=="drm", ACTION=="change", ENV{HOTPLUG}="1", RUN+="/usr/bin/systemctl start docking.service"
